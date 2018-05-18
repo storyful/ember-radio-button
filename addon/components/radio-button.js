@@ -45,7 +45,7 @@ export default Component.extend({
       this.sendAction('changed', newValue);
     },
     clicked(value) {
-      this.sendAction('changed', value);
+      this.sendAction('clicked', value);
     }
   }
 });
