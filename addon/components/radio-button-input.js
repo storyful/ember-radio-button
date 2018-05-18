@@ -51,5 +51,13 @@ export default Component.extend({
       this.set('groupValue', value); // violates DDAU
       run.once(this, 'sendChangedAction');
     }
+  },
+
+  sendClickAction() {
+    this.sendAction('clicked', this.get('value'));
+  },
+
+  click(){
+    run.once(this, 'sendClickAction');
   }
 });
