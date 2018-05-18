@@ -57,7 +57,7 @@ export default Component.extend({
     this.sendAction('clicked', this.get('value'));
   },
 
-  click(){
-    run.once(this, 'sendClickAction');
+  click() {
+    run.later(this, 'sendClickAction');
   }
 });
